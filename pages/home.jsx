@@ -17,8 +17,8 @@ export default function Home() {
   }
 
   return (
-    <div className='w-full h-screen flex items-center justify-center text-white bg-indigo-700 flex-col tracking-widest uppercase'>
-      <p className='text-4xl font-extrabold mb-4'>Welcome to home Page</p>
+    <div className='w-full h-screen flex items-center justify-center text-white bg-dark flex-col tracking-widest uppercase'>
+      <p className='text-4xl font-extrabold mb-4'>Welcome to  our website </p>
       <button onClick={logout} className='bg-white border-2 border-white hover:bg-transparent transition-all text-indigo-700 hover:text-white font-semibold text-lg  px-4 py-2 rounded duration-700 '>Logout</button>
     </div>
   )
