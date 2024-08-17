@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: pink; 
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
