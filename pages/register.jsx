@@ -53,12 +53,24 @@ export default function Register() {
                                     />
                                 </div>
                                 <div className='text-left'>
-                                    <label htmlFor="password" className="block mb-2 text-sm font-medium text-black dark:text-white">Password</label>
+                                    <label htmlFor="password" className="block mb-2 text-sm font-medium text-black dark:text-white">Create Password</label>
                                     <input
                                         onChange={(e) => setFormData({ ...formData, password: e.target.value })}
                                         type="password"
                                         name="password"
                                         id="password"
+                                        placeholder="••••••••"
+                                        className="bg-gray-100 border border-gray-300 text-black sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        required=""
+                                    />
+                                </div>
+                                <div className='text-left'>
+                                    <label htmlFor="Repeat password" className="block mb-2 text-sm font-medium text-black dark:text-white">Confirm Password</label>
+                                    <input
+                                        onChange={(e) => setFormData({ ...formData, password: e.target.value })}
+                                        type="Repeatpassword"
+                                        name="Repeatpassword"
+                                        id="Repeatpassword"
                                         placeholder="••••••••"
                                         className="bg-gray-100 border border-gray-300 text-black sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                         required=""
