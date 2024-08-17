@@ -5,7 +5,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 export default function Register() {
-    const [formData, setFormData] = useState({ name: "", email: "", password: "" });
+    const [formData, setFormData] = useState({ name: "", email: "", password: ""});
 
     const handleSubmit = async (e) => {
         e.preventDefault();
