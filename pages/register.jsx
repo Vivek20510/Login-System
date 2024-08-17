@@ -32,8 +32,8 @@ export default function Register() {
                             </h1>
                             <form onSubmit={handleSubmit} className=" space-y-4 md:space-y-6" action="#">
                                 <div className='text-left'>
-                                    <label htmlFor="name" className="block mb-2 text-sm font-medium text-indigo-700 dark:text-white">Your Name</label>
-                                    <input onChange={(e) => setFormData({ ...formData, name: e.target.value })} type="text" name="name" id="name" className="bg-indigo-50 border border-indigo-300 text-indigo-700 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-indigo-700 dark:border-indigo-600 dark:placeholder-indigo-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Vivek" required="" />
+                                    <label htmlFor="name" className="block mb-2 text-sm font-medium text-indigo-700 dark:text-white"> Name</label>
+                                    <input onChange={(e) => setFormData({ ...formData, name: e.target.value })} type="text" name="name" id="name" className="bg-indigo-50 border border-indigo-300 text-indigo-700 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-indigo-700 dark:border-indigo-600 dark:placeholder-indigo-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Vaibhav" required="" />
                                 </div>
                                 <div className='text-left'>
                                     <label htmlFor="email" className="block mb-2 text-sm font-medium text-indigo-700 dark:text-white">Your email</label>
