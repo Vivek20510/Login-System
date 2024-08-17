@@ -39,7 +39,7 @@ export default function Home() {
           <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-indigo-800 dark:border-indigo-700">
             <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
               <h1 className="text-xl font-bold leading-tight tracking-tight text-indigo-600 md:text-2xl dark:text-white">
-                Sign in to your account
+                Login
               </h1>
               <form onSubmit={handleSubmit} className=" space-y-4 md:space-y-6" action="#">
                 <div className='text-left'>
