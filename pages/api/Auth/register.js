@@ -15,9 +15,9 @@ export default async (req, res) => {
 
     await DBconnection();
 
-    const { name, email, password } = req.body;
+    const { name, email, password, conpass} = req.body;
 
-    const { error } = schema.validate({ name, email, password });
+    const { error } = schema.validate({ name, email, password, conpass });
 
     if (error) {
 
@@ -38,7 +38,7 @@ export default async (req, res) => {
         const hashPassword = await bcrypt.hash(password, salt);
 
 
-        const user = await User.create({ name, email, password : hashPassword });
+        const user = await User.create({ name, email, password, conpass : hashPassword });
 
         if (user) {
             return res.status(200).json({ success: true, message: "Account created successfully" })
